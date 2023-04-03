@@ -1,0 +1,60 @@
+.Header{
+    background-color: #3A98B9;
+    padding: 10px 0;
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__logo{
+            border-radius: 10pc;
+            width: 30px;
+        }
+        
+        &__list{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        &__item{
+            &__link{
+                color: rgb(255, 253, 253);;
+                font-size: 15px;
+            }
+            
+            .active{
+                border-bottom: 2px solid #ffffff;
+            }
+        }
+         &__list2{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        &__item2{
+            &__btn{
+                 transition: 0.6s;
+                 display: block;
+                 width: 40px;
+                 height: 40px;
+                &:hover{
+                    transform: translateX(-10px) ;
+                    
+                }
+            }
+            &__face{
+                font-size: 17px;
+                color: #ffffff;;
+            }
+            &__insta{
+                font-size: 17px;
+                color: #ffffff;;
+            }
+            &__tg{
+                font-size: 17px;
+                color: #ffffff;;
+            }
+        }   
+    }
+}
