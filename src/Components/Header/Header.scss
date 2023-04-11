@@ -1,13 +1,53 @@
 .Header{
     background-color: #3A98B9;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: 1s;
+         .box{
+            display: none;
+         }
+        &__logo{
+            border-radius: 10pc;
+            width: 120px;
+        }
+        &__burger{
+            color: white;
+            transform: rotate(180deg);
+            font-size: 25px;
+        }
+        .col{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            right: 0;
+            background-color: #677276;
+            display: none;
+            transform: translateY(100px);
+            transition: 1s;
+        }
+        
+        .bult{
+            display: block;
+            top: 0;
+            transition: 1s;
+            transform: translateY(0px);
+            
+        }
+        &__bur{
+            display: none;  
+        }
     .card{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+   
+        
         &__logo{
             border-radius: 10pc;
-            width: 30px;
+            width: 120px;
         }
         
         &__list{
@@ -20,10 +60,20 @@
             &__link{
                 color: rgb(255, 253, 253);;
                 font-size: 15px;
+                display: block;
+                width: 0%;
+                transition: .8s;
+                padding: 3px 10px;
+                border-radius: 5px;
             }
             
             .active{
-                border-bottom: 2px solid #ffffff;
+                background-color: #fff;
+                width: 100%;
+                color: #3A98B9;
+
+                
+                
             }
         }
          &__list2{
@@ -43,18 +93,41 @@
                     
                 }
             }
-            &__face{
-                font-size: 17px;
-                color: #ffffff;;
-            }
-            &__insta{
-                font-size: 17px;
-                color: #ffffff;;
-            }
-            &__tg{
-                font-size: 17px;
-                color: #ffffff;;
-            }
+          
         }   
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Header{
+        .box{
+            display: block;
+        }
+        .card{
+            &__list{
+                display: none;
+            }
+             &__list2{
+                display: none;
+            }  
+            
+            .card__list3{
+                    display: flex;
+                    width: 40%;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    gap: 60px;
+            }
+            .card__lis4{
+                    width: 40%;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    gap: 60px;
+            }
+            
+            &__bur{
+                display: block;
+            }
+        }
     }
 }

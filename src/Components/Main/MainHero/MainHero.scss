@@ -1,0 +1,131 @@
+.MainHero{
+    background-color: #fff;
+    padding: 80px 0;
+    .card{
+        
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item2{
+            width: 55%;
+             &__img{
+                width: 100%;
+            }
+        }
+        &__item{
+            position: relative;
+            width: 30%;
+       
+            &__title{
+                font-size: 4.5em;
+                font-weight: 500;
+                color: var(--gray-7);
+                color: #495057;
+                line-height: 70px;
+            }
+            
+            &__span{
+                    position: absolute;
+                    top: -10px;
+                    left: 0;
+                    transform: translate(-50%,-50%) rotate(-35deg);
+                    color: var(--purple-4);
+                    font-weight: 600;
+                    color: #3A98B9;
+                    font-family: Jost,sans-serif;
+            }
+            
+            &__box{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0 20px 0;
+                &__span{
+                    display: block;
+                    width: 14%;
+                    height: 2px;
+                    background-color: #3A98B9;
+                    margin-top: 2px;
+                    margin-top: 4px;
+                }
+                &__text{
+                    width: 85%;
+                    color: var(--gray-6);
+                    font-size: 18px;
+                    color: #495057;
+                    font-weight: 500;
+                    font-family: Jost,sans-serif;
+                }
+            }
+            
+            
+            &__btn1{
+                background-color: #3A98B9;
+                color: #ffff;
+                display: block;
+                display: flex;
+                align-items: center;
+                width: 54%;
+                transition: .5s;
+                margin-bottom: 10px;
+                &:hover{
+                    background-color: #3A98B9;
+                    width:66%;
+                    
+                }
+                cursor: default;
+            }
+            &__btn2{
+                border: 1px solid #3A98B9;
+                color: #3A98B9;
+                transition: 0.5s;
+                cursor: default;
+                display: block;
+                display: flex;
+                align-items: center;
+                transition: .5s;
+                width: 54%;
+                &:hover{
+                    color: #fff;
+                    background-color: #3A98B9;
+                    width:66%;
+                    
+                }
+            }
+            
+            &__loppo{
+                padding: 40px 0;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                &__left{
+                    &__title{
+                        color: #495057;
+                        font-size: 16px;
+                        font-family: Jost,sans-serif;
+                    }
+                }
+                
+                &__right{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                    &__icon{
+                        color: #3A98B9;
+                        transition: 0.4s;
+                        background: #f0f0ff;
+                        transform: scale(1.1);
+                        cursor: default;;
+
+                        &:hover{
+                            color: #3A98B9;
+                            transform: scale(1.4) rotate(360deg);
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
