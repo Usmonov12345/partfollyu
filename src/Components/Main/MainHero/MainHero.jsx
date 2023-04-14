@@ -15,8 +15,8 @@ function MainHero() {
               <ul className='card__list'>
                 <li className='card__item'>
                   <span className='card__item__span'>salom!!!</span>
-                  <h1 className='card__item__title'>Men </h1>
-                  <h1 className='card__item__title'>TOHIR </h1>
+                  <h1 className='card__item__title'>Men TOHIR </h1>
+                  <h1 className='card__item__title'> </h1>
                   <h1 className='card__item__title'>USMONOV </h1>
                   <div className="card__item__box">
                     <spam className="card__item__box__span">
