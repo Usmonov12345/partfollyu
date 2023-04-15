@@ -1,0 +1,150 @@
+.MainTwo{
+    background-color: #3A98B9;
+    padding: 40px 0;
+    .box{
+        display: flex;
+        justify-content: space-between;
+        
+        .box__left{
+            width: 45%;
+            position: relative;
+            
+            .box__left__span{
+                color: #caf0f8;
+                font-size: 22px;
+            }
+            .box__left__title{
+                padding: 10px 0;
+                color: white;;
+                font-weight: 500;
+                font-size: 54px;
+                width: 100%;
+                line-height: 50px;
+            }
+            .box__left__card{
+                display: flex;
+                gap:10px;
+            }
+            .box__left__card__span{
+                display: block;
+                background-color: #caf0f8;
+                height: 2px;
+                width: 10%;
+                margin-top: 4px;
+            }
+            .box__left__card__text{
+                color: #caf0f8;
+                font-size: 18px;
+                width: 70%;
+            }
+            
+            .box__left__card__btn{
+                background-color: #caf0f8;
+                margin-top: 40px;
+                padding : 5px 20px ;
+                border: 1px solid #caf0f8;
+                transition: 0.4s;
+                width: 20%;
+
+                
+                &:hover{
+                    color: white;
+                    background-color: transparent ;
+                    width: 27%;
+                }
+            }
+            
+        }
+        
+        
+         .box__right{
+            width: 45%;
+            .box__right__list{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .box__right__item{
+                width: 30%;
+                margin-top: 20px;
+            }
+            .box__right__item__icon{
+                color: #caf0f8;
+                font-size: 33px;
+                transition: 0.7s;
+                margin-top: 20px;
+                
+            }
+            .box__right__item__card{
+                background-color: transparent;
+                text-align: center;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: #caf0f8;
+                    .box__right__item__text{
+                        color: #3A98B9;
+                    }
+                    .box__right__item__icon{
+                        color: #3A98B9;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            
+            .box__right__item__text{
+                text-align: center;
+                color: #caf0f8;
+                transition: 0.3s;
+                font-size: 17px;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .MainTwo{
+        background-image: url('../../../Img/opppppo.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        .box{
+            flex-direction: column;
+            
+            .box__left{
+                width: 80%;
+                margin: 0 auto;;
+                text-align: center;
+                .box__left__title{
+                    font-size: 34px;
+                }
+                .box__left__card__text{
+                    width: 80%;
+                    margin: 0 auto;;
+                    font-size:17px;
+                }
+                .box__left__card__span{
+                    display: none;
+                }
+                .box__left__card__btn{
+                    width: 50%;
+                    
+                    &:hover{
+                        width: 60%;
+                    }
+                }
+            }
+            
+            .box__right{
+                width: 100%;
+                
+                .box__right__item__text{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ function MainHero() {
                     <spam className="card__item__box__span">
                     </spam>
                     <p className='card__item__box__text'>Men O'zbekistondan <br />
-                    middle Frontend Web Dasturchiman </p>
+                    junior Frontend Web Dasturchiman </p>
                   </div>
                  
                   

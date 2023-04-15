@@ -16,7 +16,7 @@ function List() {
                     </li>
                      <li className="card__item">
                         <NavLink to='/Box' className="card__item__link">
-                            Box
+                            Service
                         </NavLink>
                     </li>
                 </ul>

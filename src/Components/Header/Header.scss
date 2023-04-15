@@ -19,12 +19,11 @@
         }
         .col{
             position: fixed;
-            width: 100%;
+            width: 80%;
             height: 100vh;
-            right: 0;
+            left: 0;
             background-color: #677276;
             display: none;
-            transform: translateY(100px);
             transition: 1s;
         }
         
