@@ -1,7 +1,6 @@
 import React from 'react'
 import './Header.scss'
 import List from './List';
-import Icon from './Icon';
 import Logo from './Logo';
 import Btn from './Btn';
 function Header() {

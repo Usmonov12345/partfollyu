@@ -1,11 +1,10 @@
 import React from 'react'
 import './About.scss'
+import AbOne from './AbOne/AbOne'
 function About() {
   return (
     <div className='About'>
-        <div className="container">
-            About
-        </div>
+            <AbOne/>
     </div>
   )
 }

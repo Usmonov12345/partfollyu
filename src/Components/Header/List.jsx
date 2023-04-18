@@ -14,11 +14,6 @@ function List() {
                             About
                         </NavLink>
                     </li>
-                     <li className="card__item">
-                        <NavLink to='/Box' className="card__item__link">
-                            Service
-                        </NavLink>
-                    </li>
                 </ul>
     </div>
   )
